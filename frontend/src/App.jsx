@@ -1,12 +1,11 @@
-import { useState, useEffect} from 'react'
-import viteLogo from '/vite.svg'
-import './App.css'
-import axios from "axios";
+import NavBar from "./components/NavBar"
+import './index.css'
 
 function App() {
   return (
-    <>
-    </>
+    <div data-theme="forest">
+      <NavBar></NavBar>
+    </div>
   )
 }
 
