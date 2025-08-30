@@ -1,8 +1,8 @@
 import express from "express";
-import { getPopularMovies } from "../services/movieService.js";
+import { getPopularMoviesController } from "../controllers/movieApiController.js";
 
 const router = express.Router();
 
-router.get("/popular", getPopularMovies);
+router.get("/popular", getPopularMoviesController);
 
 export default router;
