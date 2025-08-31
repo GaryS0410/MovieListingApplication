@@ -24,7 +24,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json())
 
-app.use("/api/movies", movieRoutes);
+app.use("/api/", movieRoutes);
 app.use('/auth', authRoutes);
 app.use('/user', userRoutes);
 

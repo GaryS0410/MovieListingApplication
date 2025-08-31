@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 
 const Register = () => {
+  <div data-theme="synthwave">
+    
+  </div>
   const [formData, setFormData] = useState({
     username: '',
     email: '',

@@ -7,7 +7,7 @@ function NavBar() {
             <div className="flex items-center justify-between">
                 <h1 className="text-3xl font-cold text-primary font-mono tracking-tigher">Movie Application</h1>
                 <div className="flex items-center gap-4">
-                    <Link to={"/register"} clasName="btn ">
+                    <Link to={"/register"} className="btn ">
                         <span>Register</span>
                     </Link>
                 </div>
