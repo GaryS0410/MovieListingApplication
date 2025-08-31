@@ -4,6 +4,7 @@ import axios from "axios";
 
 // Components that make up the MovieDetailsPage 
 import MovieDetailsCard from "../components/MovieDetailsComponents/MovieDetailsCard";
+import MovieDetailsDescription from "../components/MovieDetailsComponents/MovieDescription";
 
 const MovieDetailsPage = () => {
     const { movieId } = useParams();
@@ -27,8 +28,13 @@ const MovieDetailsPage = () => {
         return <div className="min-h-screen">Loading....</div>;
     }
 
+    console.log(movieDetails);
+
     return <div className="min-h-screen">
-        <MovieDetailsCard movie={movieDetails} />
+        <div className="flex w-1/2">
+            <MovieDetailsCard movie={movieDetails} />
+            <MovieDetailsDescription movie={movieDetails} />
+        </div>
     </div>
 };
 
