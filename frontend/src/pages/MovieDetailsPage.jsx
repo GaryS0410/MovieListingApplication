@@ -31,9 +31,9 @@ const MovieDetailsPage = () => {
     console.log(movieDetails);
 
     return <div className="min-h-screen">
-        <div className="flex w-1/2">
-            <MovieDetailsCard movie={movieDetails} />
-            <MovieDetailsDescription movie={movieDetails} />
+        <div className="flex w-full items-start gap-4">
+            <MovieDetailsCard className="w-64" movie={movieDetails} />
+            <MovieDetailsDescription className="flex-shrink break-words" movie={movieDetails} />
         </div>
     </div>
 };

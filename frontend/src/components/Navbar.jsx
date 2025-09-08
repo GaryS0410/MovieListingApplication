@@ -5,10 +5,17 @@ function NavBar() {
     <header className="bg-base-300 borer-b border-base-content/10">
         <div className="mx-auto max-w-6xl">
             <div className="flex items-center justify-between">
-                <h1 className="text-3xl font-cold text-primary font-mono tracking-tigher">Movie Application</h1>
+                <h1 className="text-3xl font-cold text-primary font-mono tracking-tigher">
+                    <Link to={"/"}>
+                     Media Application 
+                    </Link>
+                </h1>
                 <div className="flex items-center gap-4">
                     <Link to={"/register"} className="btn ">
                         <span>Register</span>
+                    </Link>
+                    <Link to={"/login"} className="btn">
+                        <span>Login</span>
                     </Link>
                 </div>
             </div>

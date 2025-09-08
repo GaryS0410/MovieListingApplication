@@ -8,11 +8,12 @@ function MovieCard({ movie }) {
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{movie.title}</h2>
-                <p>{movie.description}</p>
+                <p>{movie.overview}</p>
                 <div className="card-actions">
                     <Link to={`/movieDetails/${movie.id}`} className="btn">
                         View Details
                     </Link>
+                    <button className="btn">Add to watch list</button>
                 </div>
             </div>
         </div>

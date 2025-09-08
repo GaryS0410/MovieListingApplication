@@ -5,7 +5,7 @@ import cors from "cors";
 import { connectDB } from "./config/db.js";
 
 import movieRoutes from "./routes/movieRoutes.js";
-import authRoutes from "./routes/authRoutes.js";
+import authRoutes from "./routes/userRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 
 // Defining dotenv config 
@@ -25,7 +25,7 @@ app.use(cors(corsOptions));
 app.use(express.json())
 
 app.use("/api/", movieRoutes);
-app.use('/auth', authRoutes);
+app.use('/api/user', userRoutes);
 app.use('/user', userRoutes);
 
 
